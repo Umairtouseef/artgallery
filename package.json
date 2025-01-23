@@ -41,11 +41,12 @@
     "validator": "^13.12.0"
   },
   "scripts": {
-  "start": "node index.js",
-  "dev": "concurrently \"node index.js\" \"react-scripts start\"",
-  "build": "react-scripts build"
-},
-
+    "dev": "concurrently \"node index.js\" \"react-scripts start\"",
+    "start": "concurrently \"node index.js\" \"react-scripts start\"",
+    "build": "concurrently \"node index.js\" \"react-scripts build\"",
+    "test": "concurrently \"node index.js\" \"react-scripts test\"",
+    "eject": "concurrently \"node index.js\" \"react-scripts eject\""
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
